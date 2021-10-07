@@ -1,9 +1,0 @@
-.section {
-	padding: 100px 0 95px;
-}
-
-.cupcake {
-	padding: 25px 0 50px;
-	@include radial-gradient(at left 80%, #e34345 15%, $red);
-//	background-color: $red;
-}
