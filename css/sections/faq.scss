@@ -1,0 +1,75 @@
+.faq {
+	padding-top: 95px;
+	padding-bottom: 75px;
+	background: 
+			$red url('../img/others/products_bg.png') no-repeat center;
+	background-size: auto;
+}
+
+.section-title_faq {
+	margin-bottom: 65px;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+
+.faq-content {
+	width: 885px;
+	margin: 0 auto;
+}
+
+.faq-list {
+	margin: 0;
+	padding: 0;
+}
+
+.faq-block__content {
+	display: none;
+	padding-left: 40px;
+	padding-right: 40px;
+	
+	p {
+		margin-bottom: 20px;
+		font-size: 15px;
+		color: white;
+		
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.faq-list__item {
+	margin-bottom: 35px;
+	color: white;
+	font-size: 22px;
+	
+	&_active {
+		color: #ffb100;
+		.faq-block__caption {
+			border-bottom: 2px solid transparent;
+			color: #ffb100;	
+		}
+		
+		.faq-block__content {
+			display: block;
+		}
+	}
+	
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.faq-block__caption {
+	display: inline-block;
+	font-size: 22px;
+	margin-bottom: 20px;
+	text-decoration: none;
+	border-bottom: 2px dashed white;
+	color: white;
+	
+	&:hover {
+		border-bottom: 2px dashed transparent;
+	}
+}

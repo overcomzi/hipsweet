@@ -1,0 +1,58 @@
+.main-header {
+	.container {
+		@extend %clearfix;
+	}
+	margin-bottom: 85px;
+}
+
+.main-header__left,
+.main-header__middle {
+	float: left;
+}
+
+.main-header__left {
+	width: 300px;
+}
+
+.main-header__middle {
+	width: 600px;
+	padding-top: 25px;
+	text-align: right;
+}
+
+.main-header__right{
+	width: 160px;
+	padding-top: 15px;
+	text-align: right;
+}
+
+.logo-block {
+	display: block;
+	max-width: 100%;
+	word-wrap: break-word;
+	text-decoration: none;
+	color: $orange;
+}
+
+.logo {
+	display: inline-block;
+	margin-right: 15px;
+	width: 80px;
+	height: 66px;
+	vertical-align: middle;
+}
+
+.logo__img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.logo-block__name {
+	display: inline-block;
+	font-family: "Malina";
+	font-size: 35px;
+	line-height: 1.3em;
+	vertical-align: middle;
+	color: inherit;
+}

@@ -1,0 +1,104 @@
+.main-footer {
+	min-height: 125px;
+	padding-top: 20px;
+	padding-bottom: 45px;
+}
+
+.container {
+	@extend %clearfix;
+}
+
+.main-footer__left,
+.main-footer__right{
+	float: left;
+}
+
+.main-footer__left {
+	width: 320px;
+}
+
+.main-footer__right {
+	padding-top: 15px;
+	width: 740px;
+}
+
+.copyright {
+	display: inline-block;
+	margin-right: 30px;
+	max-width: 305px;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.copyright__text {
+	font-size: 14px;
+	color: #8d8d8d;
+}
+
+.contacts {
+	display: inline-block;
+	max-width: 320px;
+	margin-right: 20px;
+	vertical-align: middle;
+	font-size: 14px;
+	font-style: normal;
+	color: #8d8d8d;
+}
+
+.social {
+	display: inline-block;
+	width: 195px;
+	vertical-align: middle;
+}
+
+.social__item {
+	display: inline-block;
+}
+
+.social-btn {
+	&_fb{
+		.social-btn__link {
+			background-position: 0 -70px;
+		}
+	}
+	
+	&_inst{
+		.social-btn__link {
+			background-position: -65px -70px;
+		}
+	}
+	
+	&_ok{
+		.social-btn__link {
+			background-position: -140px -70px;
+		}
+	}
+	
+	&_tw{
+		.social-btn__link {
+			background-position: -210px -70px;
+		}
+	}
+	
+	&_vk{
+		.social-btn__link {
+			background-position: -283px -70px;
+		}
+	}
+	
+	&:hover {
+		.social-btn__link {
+			background-position-y: 0
+		}
+	}
+}
+
+.social-btn__link {
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-indent: -9999px;
+	
+	background-image: url('../img/decor/social-sprite.png');
+	background-repeat: no-repeat;
+}

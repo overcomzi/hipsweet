@@ -1,0 +1,95 @@
+%clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin box-shadow ($value) {
+	-webkit-box-shadow: $value;
+	-moz-box-shadow: $value;
+	box-shadow: $value;
+}
+
+@mixin border-radius($value) {
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	border-radius: $value;
+}
+
+@mixin border-bottom-left-radius($value) {
+	-webkit-border-bottom-left-radius: $value;
+	-moz-border-radius-bottomleft: $value;
+	border-bottom-left-radius: $value;
+}
+
+@mixin border-bottom-right-radius($value) {
+	-webkit-border-bottom-right-radius: $value;
+	-moz-border-radius-bottomright: $value;
+	border-bottom-right-radius: $value;
+}
+
+@mixin border-top-left-radius($value) {
+	-webkit-border-top-left-radius: $value;
+	-moz-border-radius-topleft: $value;
+	border-top-left-radius: $value;
+}
+
+@mixin border-top-right-radius($value) {
+	-webkit-border-top-right-radius: $value;
+	-moz-border-radius-topright: $value;
+	border-top-right-radius: $value;
+}
+
+@mixin font-smoothing() {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin box-sizing($value: border-box) {
+	-webkit-box-sizing: $value;
+	-moz-box-sizing: $value;
+	box-sizing: $value;
+}
+
+@mixin linear-gradient($value...) {
+	background-image: -moz-linear-gradient($value);
+  background-image: -webkit-linear-gradient($value);
+  background-image: -ms-linear-gradient($value);
+}
+
+@mixin radial-gradient($value...) {
+	background-image: -webkit-radial-gradient($value); /* Safari 5.1-6.0 */
+	background-image: -o-radial-gradient($value); /* Opera 11.6-12.0 */
+	background-image: -moz-radial-gradient($value); /* Firefox 3.6-15 */
+	background-image: radial-gradient($value); 
+}
+
+@mixin transform($value...) {
+	-ms-transform: $value;
+	-webkit-transform: $value;
+	-moz-transform: $value;
+	-o-transform: $value;
+	transform: $value;
+}
+
+@function getAdaptIconSize($spriteSize, $size) {
+	@return $spriteSize / $size * 100%;
+}
+
+@function getAdaptIcanPosition($spriteSize, $size, $position) {
+	@return $position / ($spriteSize - $size) * 100%
+}
+
+@mixin bgPosAdapt($spriteWidth, $spriteHeight, $width, $height, $x, $y) {
+	background-position: 
+		getAdaptIcanPosition($spriteWidth, $width, $x)  
+		getAdaptIcanPosition($spriteHeight, $height, $y);  
+}
+
+@mixin bgSizeAdapt($spriteWidth, $spriteHeight, $width, $height) {
+	background-size: 
+		getAdaptIconSize($spriteWidth, $width)  
+		getAdaptIconSize($spriteHeight, $height);  
+}

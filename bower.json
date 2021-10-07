@@ -1,0 +1,22 @@
+{
+  "name": "hipsweet",
+  "authors": [
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "bxslider-4": "^4.2.15",
+    "jquery-mask-plugin": "jquery-mask#^1.14.15"
+  }
+}
